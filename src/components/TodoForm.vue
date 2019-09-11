@@ -25,6 +25,7 @@
         </v-list-item-content>
       </v-card>
     </div>
+    <amplify-sign-out></amplify-sign-out>
   </v-app>
 </template>
 

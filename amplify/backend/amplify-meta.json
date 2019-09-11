@@ -25,8 +25,30 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/todo-test-20190911101947-deployment/amplify-cfn-templates/api/cloudformation-template.json",
 				"logicalId": "apitodo"
 			},
-			"lastPushTimeStamp": "2019-09-11T01:25:56.302Z",
+			"lastPushTimeStamp": "2019-09-11T08:14:18.178Z",
 			"lastPushDirHash": "6cDU7lL1Z+yTEtjnG/WmWP939KA="
+		}
+	},
+	"auth": {
+		"todo062ecd99": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/todo-test-20190911101947-deployment/amplify-cfn-templates/auth/todo062ecd99-cloudformation-template.yml",
+				"logicalId": "authtodo062ecd99"
+			},
+			"lastPushTimeStamp": "2019-09-11T08:14:18.181Z",
+			"output": {
+				"AppClientSecret": "i9dc9usa6lad22eea0umjpeu10rr4evji0bhqpe6r9ggao7i91",
+				"UserPoolId": "ap-northeast-1_uSCdCMJcj",
+				"AppClientIDWeb": "3abmvv6i68m57t37mp1tj5m2lu",
+				"AppClientID": "6uv341b216cpnknhcu26grblne",
+				"IdentityPoolId": "ap-northeast-1:bc7d5dbf-968f-4075-a001-51c30c19a48c",
+				"IdentityPoolName": "todo062ecd99_identitypool_062ecd99__test",
+				"UserPoolName": "todo062ecd99_userpool_062ecd99"
+			},
+			"lastPushDirHash": "jQMwBUYwhZjsVmvHjK5KOOUaj+0="
 		}
 	}
 }
