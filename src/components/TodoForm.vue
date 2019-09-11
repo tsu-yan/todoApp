@@ -1,29 +1,31 @@
 <template>
-  <div>
-    <v-toolbar dark color="indigo">
-        <v-toolbar-title>
-            My Todo
-        </v-toolbar-title>
-    </v-toolbar>
-    <v-text-field v-model="input.name" label="title"></v-text-field>
-    <v-text-field v-model="input.description" label="description"></v-text-field>
-    <v-btn fab dark color="indigo" v-on:click="createTodo">
-        <v-icon>mdi-plus</v-icon>
-    </v-btn>
-    <v-card
-    class="mx-auto"
-    max-width="600"
-    >
-      <v-list-item-content v-for='(todo, index) in todos' :key='index'>
-        <!-- <span>{{ todo }}</span> -->
-        <v-card-title>{{ todo.name }}</v-card-title>
-        <v-card-text>{{ todo.description }}</v-card-text>
-        <v-card-actions>
-        <v-btn outlined v-on:click="deleteTodo(todo.id)">Delete</v-btn>
-        </v-card-actions>
-      </v-list-item-content>
-    </v-card>
-  </div>
+  <v-app>
+    <div>
+      <v-toolbar dark color="indigo">
+          <v-toolbar-title>
+              My Todo
+          </v-toolbar-title>
+      </v-toolbar>
+      <v-text-field v-model="input.name" label="title"></v-text-field>
+      <v-text-field v-model="input.description" label="description"></v-text-field>
+      <v-btn fab dark color="indigo" v-on:click="createTodo">
+          <v-icon>mdi-plus</v-icon>
+      </v-btn>
+      <v-card
+      class="mx-auto"
+      max-width="600"
+      >
+        <v-list-item-content v-for='(todo, index) in todos' :key='index'>
+          <!-- <span>{{ todo }}</span> -->
+          <v-card-title>{{ todo.name }}</v-card-title>
+          <v-card-text>{{ todo.description }}</v-card-text>
+          <v-card-actions>
+          <v-btn outlined v-on:click="deleteTodo(todo.id)">Delete</v-btn>
+          </v-card-actions>
+        </v-list-item-content>
+      </v-card>
+    </div>
+  </v-app>
 </template>
 
 <script>
